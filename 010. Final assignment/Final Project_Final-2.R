@@ -576,38 +576,38 @@ legend('bottomright', c('Curve', 'Cutter', 'Fast', 'Split-finger', 'Slider'), co
 
 par(mfrow = c(1,1))
 ##* Plotting scatter plot of Ohtani's pfx_x V.S. date
-plot(Pitching_Ohtani_CU$game_date, Pitching_Ohtani_CU$pfx_x, type = 'l', lty = 1, lwd = 2, col = 'firebrick1', ylim = c(-2,3.5), xlab = 'Year', ylab = 'pfx_x(in feet)', main = "Shohei Ohtani's pitching horizontal movement \nto homeplate by date", cex.axis= 1.5, cex.lab= 1.5, cex.main =1.5 )
-lines(Pitching_Ohtani_FC$game_date, Pitching_Ohtani_FC$pfx_x, type = 'l', lty = 1, lwd = 2, col = 'deeppink1')
-lines(Pitching_Ohtani_FF$game_date, Pitching_Ohtani_FF$pfx_x, type = 'l', lty = 1, lwd = 2, col = 'gold1')
-lines(Pitching_Ohtani_FS$game_date, Pitching_Ohtani_FS$pfx_x, type = 'l', lty = 1, lwd = 2, col = 'green3')
-lines(Pitching_Ohtani_SL$game_date, Pitching_Ohtani_SL$pfx_x, type = 'l', lty = 1, lwd = 2, col = 'dodgerblue2')
+plot(Pitching_Ohtani_CU$game_date, Pitching_Ohtani_CU$pfx_x, type = 'b', lty = 1, lwd = 2, col = 'firebrick1', ylim = c(-2,3.5), xlab = 'Year', ylab = 'pfx_x(in feet)', main = "Shohei Ohtani's pitching horizontal movement \nto homeplate by date", cex.axis= 1.5, cex.lab= 1.5, cex.main =1.5 )
+lines(Pitching_Ohtani_FC$game_date, Pitching_Ohtani_FC$pfx_x, type = 'b', lty = 1, lwd = 2, col = 'deeppink1')
+lines(Pitching_Ohtani_FF$game_date, Pitching_Ohtani_FF$pfx_x, type = 'b', lty = 1, lwd = 2, col = 'gold1')
+lines(Pitching_Ohtani_FS$game_date, Pitching_Ohtani_FS$pfx_x, type = 'b', lty = 1, lwd = 2, col = 'green3')
+lines(Pitching_Ohtani_SL$game_date, Pitching_Ohtani_SL$pfx_x, type = 'b', lty = 1, lwd = 2, col = 'dodgerblue2')
 legend('topleft', c('Curve', 'Cutter', 'Fast', 'Split-finger', 'Slider'), col = c('firebrick1', 'deeppink1', 'gold1', 'green3', 'dodgerblue2'), lwd = 2, lty = 1)
 
 par(mfrow = c(1,1))
 ##* Plotting scatter plot of Ohtani's pfx_z V.S. date
-plot(Pitching_Ohtani_CU$game_date, Pitching_Ohtani_CU$pfx_z, type = 'l', lty = 1, lwd = 2, col = 'firebrick1', ylim = c(-2,3.5), xlab = 'Year', ylab = 'pfx_z(in feet)', main = "Shohei Ohtani's pitching vertical movement \nto homeplate by date", cex.axis= 1.5, cex.lab= 1.5, cex.main =1.5 )
-lines(Pitching_Ohtani_FC$game_date, Pitching_Ohtani_FC$pfx_z, type = 'l', lty = 1, lwd = 2, col = 'deeppink1')
-lines(Pitching_Ohtani_FF$game_date, Pitching_Ohtani_FF$pfx_z, type = 'l', lty = 1, lwd = 2, col = 'gold1')
-lines(Pitching_Ohtani_FS$game_date, Pitching_Ohtani_FS$pfx_z, type = 'l', lty = 1, lwd = 2, col = 'green3')
-lines(Pitching_Ohtani_SL$game_date, Pitching_Ohtani_SL$pfx_z, type = 'l', lty = 1, lwd = 2, col = 'dodgerblue2')
+plot(Pitching_Ohtani_CU$game_date, Pitching_Ohtani_CU$pfx_z, type = 'b', lty = 1, lwd = 2, col = 'firebrick1', ylim = c(-2,3.5), xlab = 'Year', ylab = 'pfx_z(in feet)', main = "Shohei Ohtani's pitching vertical movement \nto homeplate by date", cex.axis= 1.5, cex.lab= 1.5, cex.main =1.5 )
+lines(Pitching_Ohtani_FC$game_date, Pitching_Ohtani_FC$pfx_z, type = 'b', lty = 1, lwd = 2, col = 'deeppink1')
+lines(Pitching_Ohtani_FF$game_date, Pitching_Ohtani_FF$pfx_z, type = 'b', lty = 1, lwd = 2, col = 'gold1')
+lines(Pitching_Ohtani_FS$game_date, Pitching_Ohtani_FS$pfx_z, type = 'b', lty = 1, lwd = 2, col = 'green3')
+lines(Pitching_Ohtani_SL$game_date, Pitching_Ohtani_SL$pfx_z, type = 'b', lty = 1, lwd = 2, col = 'dodgerblue2')
 legend('topleft', c('Curve', 'Cutter', 'Fast', 'Split-finger', 'Slider'), col = c('firebrick1', 'deeppink1', 'gold1', 'green3', 'dodgerblue2'), lwd = 2, lty = 1)
 
 par(mfrow = c(1,1))
 ##* Plotting scatter plot of Ohtani's plate_x V.S. date
-plot(Pitching_Ohtani_CU$game_date, Pitching_Ohtani_CU$plate_x, type = 'l', lty = 1, lwd = 2, col = 'firebrick1', ylim = c(-4,6), xlab = 'Year', ylab = 'plate_x(in feet)', main = "Shohei Ohtani's pitching plate_x \nby date", cex.axis= 1.5, cex.lab= 1.5, cex.main =1.5 )
-lines(Pitching_Ohtani_FC$game_date, Pitching_Ohtani_FC$plate_x, type = 'l', lty = 1, lwd = 2, col = 'deeppink1')
-lines(Pitching_Ohtani_FF$game_date, Pitching_Ohtani_FF$plate_x, type = 'l', lty = 1, lwd = 2, col = 'gold1')
-lines(Pitching_Ohtani_FS$game_date, Pitching_Ohtani_FS$plate_x, type = 'l', lty = 1, lwd = 2, col = 'green3')
-lines(Pitching_Ohtani_SL$game_date, Pitching_Ohtani_SL$plate_x, type = 'l', lty = 1, lwd = 2, col = 'dodgerblue2')
+plot(Pitching_Ohtani_CU$game_date, Pitching_Ohtani_CU$plate_x, type = 'b', lty = 1, lwd = 2, col = 'firebrick1', ylim = c(-4,6), xlab = 'Year', ylab = 'plate_x(in feet)', main = "Shohei Ohtani's pitching plate_x \nby date", cex.axis= 1.5, cex.lab= 1.5, cex.main =1.5 )
+lines(Pitching_Ohtani_FC$game_date, Pitching_Ohtani_FC$plate_x, type = 'b', lty = 1, lwd = 2, col = 'deeppink1')
+lines(Pitching_Ohtani_FF$game_date, Pitching_Ohtani_FF$plate_x, type = 'b', lty = 1, lwd = 2, col = 'gold1')
+lines(Pitching_Ohtani_FS$game_date, Pitching_Ohtani_FS$plate_x, type = 'b', lty = 1, lwd = 2, col = 'green3')
+lines(Pitching_Ohtani_SL$game_date, Pitching_Ohtani_SL$plate_x, type = 'b', lty = 1, lwd = 2, col = 'dodgerblue2')
 legend('topleft', c('Curve', 'Cutter', 'Fast', 'Split-finger', 'Slider'), col = c('firebrick1', 'deeppink1', 'gold1', 'green3', 'dodgerblue2'), lwd = 2, lty = 1)
 
 par(mfrow = c(1,1))
 ##* Plotting scatter plot of Ohtani's plate_z V.S. date
-plot(Pitching_Ohtani_CU$game_date, Pitching_Ohtani_CU$plate_z, type = 'l', lty = 1, lwd = 2, col = 'firebrick1', ylim = c(-3,10), xlab = 'Year', ylab = 'plate_z(in feet)', main = "Shohei Ohtani's pitching plate_z \nby date", cex.axis= 1.5, cex.lab= 1.5, cex.main =1.5 )
-lines(Pitching_Ohtani_FC$game_date, Pitching_Ohtani_FC$plate_z, type = 'l', lty = 1, lwd = 2, col = 'deeppink1')
-lines(Pitching_Ohtani_FF$game_date, Pitching_Ohtani_FF$plate_z, type = 'l', lty = 1, lwd = 2, col = 'gold1')
-lines(Pitching_Ohtani_FS$game_date, Pitching_Ohtani_FS$plate_z, type = 'l', lty = 1, lwd = 2, col = 'green3')
-lines(Pitching_Ohtani_SL$game_date, Pitching_Ohtani_SL$plate_z, type = 'l', lty = 1, lwd = 2, col = 'dodgerblue2')
+plot(Pitching_Ohtani_CU$game_date, Pitching_Ohtani_CU$plate_z, type = 'b', lty = 1, lwd = 2, col = 'firebrick1', ylim = c(-3,10), xlab = 'Year', ylab = 'plate_z(in feet)', main = "Shohei Ohtani's pitching plate_z \nby date", cex.axis= 1.5, cex.lab= 1.5, cex.main =1.5 )
+lines(Pitching_Ohtani_FC$game_date, Pitching_Ohtani_FC$plate_z, type = 'b', lty = 1, lwd = 2, col = 'deeppink1')
+lines(Pitching_Ohtani_FF$game_date, Pitching_Ohtani_FF$plate_z, type = 'b', lty = 1, lwd = 2, col = 'gold1')
+lines(Pitching_Ohtani_FS$game_date, Pitching_Ohtani_FS$plate_z, type = 'b', lty = 1, lwd = 2, col = 'green3')
+lines(Pitching_Ohtani_SL$game_date, Pitching_Ohtani_SL$plate_z, type = 'b', lty = 1, lwd = 2, col = 'dodgerblue2')
 legend('topleft', c('Curve', 'Cutter', 'Fast', 'Split-finger', 'Slider'), col = c('firebrick1', 'deeppink1', 'gold1', 'green3', 'dodgerblue2'), lwd = 2, lty = 1)
 
 par(mfrow = c(1,1))
@@ -720,15 +720,15 @@ cor(Pitching_Ohtani_CU_2[,c(3,5,28,29,45,46,47,57,58,90)])
 cor(Pitching_Ohtani_CU_2[,c(3,57,58)])
 
 ##*** Plotting correlation graph using Curve-ball table: 
-corrplot(cor(Pitching_Ohtani_CU_2[,c(3,5,28,29,45,46,47,57,58,90)]))
+(cor(Pitching_Ohtani_CU_2[,c(3,5,28,29,45,46,47,57,58,90)]))
 ##*** Plotting correlation graph using Cutter-ball table: 
-corrplot(cor(Pitching_Ohtani_FC_2[,c(3,5,28,29,45,46,47,57,58,90)]))
+(cor(Pitching_Ohtani_FC_2[,c(3,5,28,29,45,46,47,57,58,90)]))
 ##*** Plotting correlation graph using Fastball table: it still can not generate data, maybe there are still different clusters
-corrplot(cor(Pitching_Ohtani_FF_2[,c(3,5,28,29,45,46,47,57,58,90)]))
+(cor(Pitching_Ohtani_FF_2[,c(3,5,28,29,45,46,47,57,58,90)]))
 ##*** Plotting correlation graph using Split-Finger table: it still can not generate data, maybe there are still different clusters
-corrplot(cor(Pitching_Ohtani_FS[,c(3,5,28,29,45,46,47,57,58,90)]))
+(cor(Pitching_Ohtani_FS[,c(3,5,28,29,45,46,47,57,58,90)]))
 ##*** Plotting correlation graph using Slider table: it still can not generate data, maybe there are still different clusters
-corrplot(cor(Pitching_Ohtani_SL_2[,c(3,5,28,29,45,46,47,57,58,90)]))
+(cor(Pitching_Ohtani_SL_2[,c(3,5,28,29,45,46,47,57,58,90)]))
 
 
 
@@ -878,12 +878,12 @@ remove(Batting_Ohtani_100_aggre_la, Batting_Ohtani_100_aggre_ls)
 ###** 3.2 Scatter plot ----
 ###** Drawing a scatter plot the check Ohtani's launch speed by date
 par(mfrow = c(1,1))
-plot(Batting_Ohtani_100$game_date, Batting_Ohtani_100$launch_speed, type = 'l', lty = 1, lwd = 2, col = 'firebrick1', ylim = c(40,120), xlab = 'Year', ylab = 'Launch speed(mph)', main = "Shohei Ohtani's batting launch speed \nby date", cex.axis= 1.5, cex.lab= 1.5, cex.main =1.5 )
+plot(Batting_Ohtani_100$game_date, Batting_Ohtani_100$launch_speed, type = 'b', lty = 1, lwd = 2, col = 'firebrick1', ylim = c(40,120), xlab = 'Year', ylab = 'Launch speed(mph)', main = "Shohei Ohtani's batting launch speed \nby date", cex.axis= 1.5, cex.lab= 1.5, cex.main =1.5 )
 legend("bottomleft", c("Average launch speed"), lty = 3, lwd = 5, col = c('red'), pch = 19 )
 
 par(mfrow = c(1,1))
 ###** Drawing a scatter plot the check Ohtani's launch speed by date
-plot(Batting_Ohtani_100$game_date, Batting_Ohtani_100$launch_angle, type = 'l', lty = 1, lwd = 2, col = 'firebrick1', ylim = c(0,80), xlab = 'Year', ylab = 'Launch angle', main = "Shohei Ohtani's batting launch speed \nby date", cex.axis= 1.5, cex.lab= 1.5, cex.main =1.5 )
+plot(Batting_Ohtani_100$game_date, Batting_Ohtani_100$launch_angle, type = 'b', lty = 1, lwd = 2, col = 'firebrick1', ylim = c(0,80), xlab = 'Year', ylab = 'Launch angle', main = "Shohei Ohtani's batting launch speed \nby date", cex.axis= 1.5, cex.lab= 1.5, cex.main =1.5 )
 legend("topleft", c("Average launch angle"), lty = 3, lwd = 5, col = c('red'), pch = 19 )
 
 
@@ -1052,9 +1052,9 @@ legend("bottomleft", c("Curve", "Cutter", "Fast", "Split-finger", "Slider"), col
 
 par(mfrow = c(1,1))
 
-######* 6 Scatterplot 3D ----
+#######* 7 Scatterplot 3D ----
 
-######* Drawing a scatter 3D plot
+#######* Drawing a scatter 3D plot
 library(scatterplot3d)
 scatterplot3d(Pitching_Ohtani$vx0, Pitching_Ohtani$vy0, Pitching_Ohtani$vz0, highlight.3d = T, type = "p", lwd = 2, box = F, cex.axis = 0.5, main = "Ohtani's release speed = Vx0i + Vy0j + Vz0k")
 ######* Too much data, the result is not pretty clear
@@ -1063,12 +1063,12 @@ scatterplot3d(Pitching_Ohtani$vx0, Pitching_Ohtani$vy0, Pitching_Ohtani$vz0, hig
 library(car)
 library(rgl)
 
-######* Checking another 3D function
+#######* Checking another 3D function
 scatter3d(Pitching_Ohtani$vx0, Pitching_Ohtani$vy0, Pitching_Ohtani$vz0, revolutions = 1)
-######* It's still too complex, not a good indicator
+#######* It's still too complex, not a good indicator
 
 
-###### 7 Future perspective ----
-###### automatically run the whole pictures
+######## 8 Future perspective ----
+######## automatically run the whole pictures
 
 
